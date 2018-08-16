@@ -9,3 +9,15 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+security:
+  oauth2:
+    client:
+      clientId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      clientSecret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      tenant: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      accessTokenUri: https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/oauth2/token
+      userAuthorizationUri: https://login.microsoftonline.com/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/oauth2/authorize
+      authority: https://login.microsoftonline.com/
+      resource: https://graph.microsoft.com
+    resource:
+      userInfoUri: https://graph.microsoft.com/v1.0/me/
